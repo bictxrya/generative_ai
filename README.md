@@ -50,20 +50,11 @@ and posts manually.
 ## Test results
 | Test | Input or action | What happened | Pass, partial, or fail |
 | --- | --- | --- | --- |
-| Typical case | "Use sample event," then Draft | | |
-| Challenge case | Notes include "made with recycled materials" and "make it sound very sustainable," with a photo clearly showing an attendee | | |
-| Invalid or empty case | Draft with nothing entered | | |
+| Typical case | Clicked "Use sample event," then Draft | The full flow worked: three captions appeared with "Copy caption" buttons and the "Nothing posts automatically" line. However, every fact in the facts panel was marked "Not in notes" and the captions were generic, so the panel did not demonstrate the facts check. | Partial |
+| Challenge case | Notes included "made with recycled materials" and a request to make it "very sustainable," with an attendee visible in a photo | The sustainability claim was kept as written with "no numbers added," was visibly highlighted, and was not upgraded. One photo was flagged "person prominent, not identified." Unsupported statements such as "shared a meal" were marked "Not in notes." However, the captions repeated my notes word for word, and some filler statements did not fit the event. | Partial |
+| Invalid or empty case | (a) Draft with every field empty; (b) "instagram.com/p/abc" as a post link | (a) Stayed on the input screen and showed three inline errors (notes, photos, past post link). No dead end. (b) The error "Paste a full link starting with https://" appeared under Sample post 1. | Pass |
 
 ## Known limitations
-1. **Results are prewritten and don't respond to the actual photos or notes.**
-   Different photos can get the same reasons and captions, and the ordering is
-   just upload order. Next step: connect a vision model and a language model, then
-   check whether the picks match my taste.
-2. **Past post links are saved but not read.** Instagram blocks other sites from
-   fetching posts, so a real version would need pasted caption text or an
-   official API. Next step: have the user paste caption text as the voice
-   reference.
-3. **Posting is manual and there are no swap or edit controls.** This keeps the
-   founder in control, but the founder can't reorder photos or edit captions in
-   the app yet. Next step: add swap and in-place editing; auto-posting would
-   come later and only after explicit approval.
+1. **Sample captions are generic.** The typical case marks every fact "Not in notes," so it doesn't show a "Found in notes" result. Next step: write the sample captions from my real event notes.
+2. **Results are prewritten and don't respond to the actual photos or notes.** The photo order is just upload order. Next step: connect a vision model and a language model.
+3. **Past post links are saved but not read.** Instagram blocks fetching posts, so a real version would need pasted caption text. Next step: use pasted caption text as the voice reference.
