@@ -15,7 +15,7 @@ button. Nothing posts automatically; the founder copies the caption and posts
 from Instagram themselves.
 
 ## Try it
-[[Replit link: https://do-4-love-post-helper.replit.app]
+[[Replit link: (https://do-4-love-post-helper.replit.app/do4love-post-helper/)]
 Click "Use sample event," then "Draft." You can also upload your own photos and
 type your own notes, but the results are prewritten (see AI status).
 
