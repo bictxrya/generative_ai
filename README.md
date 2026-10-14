@@ -52,7 +52,7 @@ and posts manually.
 | --- | --- | --- | --- |
 | Typical case | "Use sample event," then Draft | | |
 | Challenge case | Notes include "made with recycled materials" and "make it sound very sustainable," with a photo clearly showing an attendee | | |
-| Invalid or empty case | (a) Draft with nothing entered; (b) a post link without https:// (e.g., "instagram.com/p/abc") | | |
+| Invalid or empty case | Draft with nothing entered | | |
 
 ## Known limitations
 1. **Results are prewritten and don't respond to the actual photos or notes.**
